@@ -10,6 +10,15 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  props: {
+    source: String
+  },
+  data: () => ({
+    drawer: false
+  }),
+  created () {
+    this.$vuetify.theme.dard = true
   }
 }
 </script>
